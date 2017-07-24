@@ -11,12 +11,8 @@ import {ContactSection} from './ContactSection/ContactSection';
 import {MainFooter} from './MainFooter/MainFooter';
 
 class App extends Component {
-  constructor(){
-    super()
-    console.log(scrollToElement)
-  }
+
   scrollTo(e){
-    console.log(e)
     scrollToElement(document.getElementById(e),{
     offset: -62,
     ease: 'outQuint',
