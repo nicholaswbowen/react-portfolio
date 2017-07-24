@@ -1,0 +1,82 @@
+//this fixes an error with the icons, do not remove
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+// @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
+@import "_sandstone_variables.scss"; // swap this out with another variables file to change theme
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
+$shadow:   lighten($gray-darker, 7.5%); 
+$break-small: 320px;
+$break-large: 1200px;
+
+body{
+    background-color: $gray-darker;
+}
+.hrule{
+    width: 100%;
+    border: 1px solid $shadow;
+    height: 2px;
+    margin: 20px 0px 20px 0px;
+}
+.site-navbar{
+    // background-color: $gray-dark;
+    // min-height: 100px;
+    box-shadow: 0 .5px .5px .5px $shadow;
+    background-color: $gray-darker;
+    #site-brand{
+        font: 2em "Brush Script Std", cursive;
+    }
+}
+.main-container{
+    margin-top: 60px;
+}
+.add-margin-bottom{
+    margin-bottom: 2.5%; 
+}
+.add-margin-bottom-2{
+    margin-bottom: 5%; 
+}
+.content-section{
+    background-color: $gray-darker;
+    box-shadow: 0 .5px .5px .5px $shadow;
+    margin-bottom: 1px;
+    color: $gray-lighter;
+    .code-links{
+        box-shadow: 0 0 .5px .5px $shadow;
+        span{
+            margin-top: 12px;
+        }
+
+    }
+    .panel-body{
+        padding: 15px 0px 15px 0px;
+        color: $gray-darker; 
+    }
+    img{
+        border: solid $shadow 4px;
+    }
+    h1, h5{
+        margin-top: 0px;
+    }
+    @media (max-width: $screen-sm) and (min-width: 0px) {
+        h1{
+        font-size: 190%;
+        }
+    }
+    @media (min-width: $screen-lg) {
+        h1{
+            font-size: 325%;
+        }
+        h3{
+            font-size: 250%;
+        }
+        h4{
+            font-size: 225%;
+        }
+  }
+}
+
+.main-footer{
+    margin-top: 3px;
+    // background-color: $gray-darker;
+    min-height: 200px;
+}

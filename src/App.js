@@ -1,20 +1,40 @@
+//Modules
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Grid} from 'react-bootstrap';
+import './styles/styles.scss'
+import scrollToElement from 'scroll-to-element';
+//Components
+import {SiteNavbar} from './SiteNavbar/SiteNavbar';
+import {BioSection} from './BioSection/BioSection';
+import {ProjectsSection} from './ProjectsSection/ProjectsSection';
+import {ContactSection} from './ContactSection/ContactSection';
+import {MainFooter} from './MainFooter/MainFooter';
 
 class App extends Component {
+  constructor(){
+    super()
+    console.log(scrollToElement)
+  }
+  scrollTo(e){
+    console.log(e)
+    scrollToElement(document.getElementById(e),{
+    offset: -62,
+    ease: 'outQuint',
+    duration: 750
+    })
+  }
   render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
+    return (<div>
+      <SiteNavbar scrollTo={this.scrollTo.bind(this)}/>
+      <Grid fluid className="main-container">
+      {/* Main Container */}
+        <BioSection />
+        <ProjectsSection/>
+        <ContactSection/>
+        <MainFooter/>
+      </Grid>
+      
+    </div>);
   }
 }
 
