@@ -28,8 +28,8 @@ const FileSizeReporter = require('react-dev-utils/FileSizeReporter');
 const measureFileSizesBeforeBuild =
   FileSizeReporter.measureFileSizesBeforeBuild;
 const printFileSizesAfterBuild = FileSizeReporter.printFileSizesAfterBuild;
-// const useYarn = fs.existsSync(paths.yarnLockFile);
-const useYarn = false;
+const useYarn = fs.existsSync(paths.yarnLockFile);
+
 // These sizes are pretty large. We'll warn for bundles exceeding them.
 const WARN_AFTER_BUNDLE_GZIP_SIZE = 512 * 1024;
 const WARN_AFTER_CHUNK_GZIP_SIZE = 1024 * 1024;
