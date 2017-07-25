@@ -4,18 +4,25 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 @import "_sandstone_variables.scss"; // swap this out with another variables file to change theme
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
-$shadow:   lighten($gray-darker, 7.5%); 
-$break-small: 320px;
-$break-large: 1200px;
+$shadow:   lighten($gray-darker, 10%); 
 
 body{
-    background-color: $gray-darker;
+    background-color: lighten($gray-darker, 5%);
+}
+a {
+    text-decoration: none!important;
 }
 .hrule{
     width: 100%;
     border: 1px solid $shadow;
     height: 2px;
     margin: 20px 0px 20px 0px;
+}
+.linkedin-header{
+    h3{
+        padding-bottom: 0px;
+    }
+    
 }
 .site-navbar{
     // background-color: $gray-dark;
@@ -36,7 +43,7 @@ body{
     margin-bottom: 5%; 
 }
 .content-section{
-    background-color: $gray-darker;
+    background-color: lighten($gray-darker, 5%);
     box-shadow: 0 .5px .5px .5px $shadow;
     margin-bottom: 1px;
     color: $gray-lighter;
@@ -51,7 +58,7 @@ body{
         padding: 15px 0px 15px 0px;
         color: $gray-darker; 
     }
-    img{
+    .project-image{
         border: solid $shadow 4px;
     }
     h1, h5{
@@ -69,9 +76,7 @@ body{
         h3{
             font-size: 250%;
         }
-        h4{
-            font-size: 225%;
-        }
+
   }
 }
 

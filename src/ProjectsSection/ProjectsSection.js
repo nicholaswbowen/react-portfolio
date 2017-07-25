@@ -13,7 +13,10 @@ export class ProjectsSection extends Component {
             </h1> 
             <em>(The good stuff, let's be honest)</em>
             <Col xs={12}><div className="hrule"></div></Col>
+            <br className="add-margin-bottom" />
+            <br className="add-margin-bottom" />
           </Col>
+
         {/* HoodFacts */}
         <div className="add-margin-bottom" >
           <Col md={5} className="text-center">                    
@@ -21,7 +24,6 @@ export class ProjectsSection extends Component {
               <div className="add-margin-bottom">
                 <h1>HoodFacts</h1>
                 <h3>Hoodfacts is an open source data visualization for viewing stats that matter to you. </h3>
-                
               </div>
                 <Col xs={6} sm={4} md={6}> <Panel className="text-center">AngularJS</Panel> </Col>
                 <Col xs={6} sm={4} md={6}> <Panel className="text-center">Typescript</Panel> </Col>
@@ -29,7 +31,7 @@ export class ProjectsSection extends Component {
                 <Col xs={6} sm={4} md={6}> <Panel className="text-center">Google Maps</Panel> </Col>
                 <Col xs={6} sm={4} md={6}> <Panel className="text-center">Canvas</Panel> </Col>
                 <Col xs={6} sm={4} md={6}> <Panel className="text-center">MongoDB</Panel> </Col>
-                <Col xs={10} xsOffset={1} className="code-links text-center">
+                <Col xs={10} xsOffset={1} className="code-links text-center add-margin-bottom">
                   <Col xs={5}><h4><a href="https://boiling-fortress-51118.herokuapp.com" target="blank">Live</a></h4></Col>
                   <Col xs={2}><Glyphicon glyph="console"/></Col>
                   <Col xs={5}><h4><a href="https://github.com/nicholaswbowen/Hoodfacts" target="blank">Code</a></h4></Col>
@@ -39,7 +41,9 @@ export class ProjectsSection extends Component {
           </Col>
           <Col md={7} xsHidden>
             <div className="add-margin-bottom"></div>  
-            <Image src={HoodFacts} responsive />
+            <Image src={HoodFacts} responsive className="project-image"/>
+            <br className="add-margin-bottom" />
+            <br className="add-margin-bottom" />
           </Col>
         </div>
         {/* Angular-interactive-image */}
@@ -56,7 +60,7 @@ export class ProjectsSection extends Component {
                 <Col xs={6} sm={4} md={6}> <Panel className="text-center">SVG</Panel> </Col>
                 <Col xs={6} sm={4} smOffset={4} mdOffset={0} md={6}> <Panel className="text-center">Bootstrap</Panel> </Col>
             </div>
-                <Col xs={10} xsOffset={1} className="code-links text-center">
+                <Col xs={10} xsOffset={1} className="code-links text-center add-margin-bottom">
                   <Col xs={5}><h4><a href="https://trakerr.io/" target="blank">Live</a></h4></Col>
                   <Col xs={2}><Glyphicon glyph="console"/></Col>
                   <Col xs={5}><h4><a href="https://github.com/trakerr-com/angular-interactive-image" target="blank">Code</a></h4></Col>
@@ -64,7 +68,7 @@ export class ProjectsSection extends Component {
           </Col>
           <Col md={7} xsHidden>
               <div className="add-margin-bottom"></div>  
-              <Image src={ngII} responsive rounded />
+              <Image src={ngII} responsive rounded className="project-image"/>
           </Col>
         </Col>
         </div>

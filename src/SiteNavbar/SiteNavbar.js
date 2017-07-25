@@ -16,7 +16,7 @@ export class SiteNavbar extends Component {
 
       <Nav pullRight>
         <NavItem eventKey={"bio"} onSelect={this.props.scrollTo}><Glyphicon glyph="user"/>&nbsp;Bio</NavItem>
-        <NavItem eventKey={"projects"} onSelect={this.props.scrollTo}><Glyphicon glyph="folder-open"/>&nbsp; Portfolio</NavItem>
+        <NavItem eventKey={"projects"} onSelect={this.props.scrollTo}><Glyphicon glyph="folder-open"/>&nbsp; Projects</NavItem>
         <NavItem eventKey={"contact"} onSelect={this.props.scrollTo}><Glyphicon glyph="envelope"/>&nbsp;Contact</NavItem>        
       </Nav>
     </Navbar.Collapse>

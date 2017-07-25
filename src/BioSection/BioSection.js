@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Row, Col, Panel} from 'react-bootstrap';
+import { Row, Col, Panel, Image} from 'react-bootstrap';
+import linkedinLogo from '../assets/linkedin-logo.png';
 
 export class BioSection extends Component {
   render() {
@@ -11,11 +12,17 @@ export class BioSection extends Component {
         <div>
           
           <Col xs={10} xsOffset={1} sm={10} smOffset={1} className="text-center add-margin-bottom">
-            <h1>A Seattle Front End Developer. Tried and True. Devoted to the art of crafting, polishing, and maintaining innovative products. </h1>
+            <h1>Seattle Front End Developer</h1>
+            <h3 className="add-margin-bottom">Tried and True. Devoted to the art of crafting, polishing, and maintaining innovative products</h3>
+            <span className="linkedin-header">
+              <a href="https://www.linkedin.com/in/nicholas-bowen-545167133/" target="blank">
+                <h3 style={{display: "inline"}}>Connect with me on &nbsp;<Image src={linkedinLogo} responsive width="200px" style={{display: "inline"}}/></h3>
+              </a>
+            </span>
           </Col>
           </div>
           <div className="add-margin-bottom"> 
-            <Col xs={12} smOffset={1} sm={10} lg={8} lgOffset={2} xsOffset={0}>
+            <Col xs={12} smOffset={1} sm={10} lg={8} lgOffset={2} xsOffset={0} className="add-margin-bottom">
               <Col xs={6} sm={4}> <Panel className="text-center">React</Panel> </Col>
               <Col xs={6} sm={4}> <Panel className="text-center">AngularJS</Panel> </Col>
               <Col xs={6} sm={4}> <Panel className="text-center">Node</Panel> </Col>
@@ -24,14 +31,11 @@ export class BioSection extends Component {
               <Col xs={6} sm={4}> <Panel className="text-center">Canvas</Panel> </Col>
               <Col xs={6} sm={4}> <Panel className="text-center">TypeScript</Panel> </Col>
               <Col xs={6} sm={4}> <Panel className="text-center">Agile</Panel> </Col>
-              <Col xs={6} xsOffset={3} sm={4} smOffset={0}> <Panel className="text-center">Git</Panel> </Col>                                 
+              <Col xs={6} xsOffset={3} sm={4} smOffset={0}> <Panel className="text-center">Git</Panel> </Col>      
+                           
             </Col>
           </div>
 
-        </Col>
-        <Col md={3} mdOffset={9} xs={10} xsOffset={1} className="text-center add-margin-bottom">
-          <span><em>- Connect with me on <a href="https://www.linkedin.com/in/nicholas-bowen-545167133/" target="blank">Linkedin</a></em></span> 
-          <br />
         </Col>
     </Row>
     );
