@@ -48,11 +48,18 @@ a {
     margin-bottom: 1px;
     color: $gray-lighter;
     .code-links{
-        box-shadow: 0 0 .5px .5px $shadow;
+        // box-shadow: 0 0 .5px .5px $shadow;
         span{
-            margin-top: 12px;
+            margin-top: 50%;
+            font-size: 200%;
         }
-
+        a{
+            font-size: 200%;
+            color: $gray-darker;
+        }
+        button{
+            min-width: 125px;
+        }
     }
     .panel-body{
         padding: 15px 0px 15px 0px;
@@ -74,12 +81,11 @@ a {
             font-size: 325%;
         }
         h3{
-            font-size: 250%;
+            font-size: 225%;
         }
 
   }
 }
-
 .main-footer{
     margin-top: 3px;
     // background-color: $gray-darker;

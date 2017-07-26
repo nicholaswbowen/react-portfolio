@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Row, Col, Image, Panel, Glyphicon} from 'react-bootstrap';
+import {Row, Col, Image, Panel, Glyphicon, Button} from 'react-bootstrap';
 import HoodFacts from '../assets/Hoodfacts.jpg'
 import ngII from '../assets/angular-interactive-image.jpg'
 export class ProjectsSection extends Component {
@@ -18,7 +18,7 @@ export class ProjectsSection extends Component {
           </Col>
 
         {/* HoodFacts */}
-        <div className="add-margin-bottom" >
+        <Col className="add-margin-bottom" >
           <Col md={5} className="text-center">                    
             <Col md={12} >
               <div className="add-margin-bottom">
@@ -32,9 +32,9 @@ export class ProjectsSection extends Component {
                 <Col xs={6} sm={4} md={6}> <Panel className="text-center">Canvas</Panel> </Col>
                 <Col xs={6} sm={4} md={6}> <Panel className="text-center">MongoDB</Panel> </Col>
                 <Col xs={10} xsOffset={1} className="code-links text-center add-margin-bottom">
-                  <Col xs={5}><h4><a href="https://boiling-fortress-51118.herokuapp.com" target="blank">Live</a></h4></Col>
+                  <Col xs={5}><Button bsStyle="success"><a href="https://boiling-fortress-51118.herokuapp.com" target="blank">Live</a></Button></Col>
                   <Col xs={2}><Glyphicon glyph="console"/></Col>
-                  <Col xs={5}><h4><a href="https://github.com/nicholaswbowen/Hoodfacts" target="blank">Code</a></h4></Col>
+                  <Col xs={5}><Button bsStyle="warning"><a href="https://github.com/nicholaswbowen/Hoodfacts" target="blank">Code</a></Button></Col>
                 </Col>
             </Col>
 
@@ -42,11 +42,15 @@ export class ProjectsSection extends Component {
           <Col md={7} xsHidden>
             <div className="add-margin-bottom"></div>  
             <Image src={HoodFacts} responsive className="project-image"/>
-            <br className="add-margin-bottom" />
-            <br className="add-margin-bottom" />
           </Col>
-        </div>
+        </Col>
+        <Col xs={12}>
+          <br className="add-margin-bottom" />
+          <br className="add-margin-bottom" />
+        </Col>
+
         {/* Angular-interactive-image */}
+        <Col>
         <Col xs={12} className="add-margin-bottom" >
           <Col md={5} className="text-center">                    
             <div >
@@ -61,15 +65,16 @@ export class ProjectsSection extends Component {
                 <Col xs={6} sm={4} smOffset={4} mdOffset={0} md={6}> <Panel className="text-center">Bootstrap</Panel> </Col>
             </div>
                 <Col xs={10} xsOffset={1} className="code-links text-center add-margin-bottom">
-                  <Col xs={5}><h4><a href="https://trakerr.io/" target="blank">Live</a></h4></Col>
+                  <Col xs={5}><Button bsStyle="success"><a href="https://trakerr.io/" target="blank">Live</a></Button></Col>
                   <Col xs={2}><Glyphicon glyph="console"/></Col>
-                  <Col xs={5}><h4><a href="https://github.com/trakerr-com/angular-interactive-image" target="blank">Code</a></h4></Col>
+                  <Col xs={5}><Button bsStyle="warning"><a href="https://github.com/trakerr-com/angular-interactive-image" target="blank">Code</a></Button></Col>
                 </Col>
           </Col>
           <Col md={7} xsHidden>
               <div className="add-margin-bottom"></div>  
               <Image src={ngII} responsive rounded className="project-image"/>
           </Col>
+        </Col>
         </Col>
         </div>
     </Row>
