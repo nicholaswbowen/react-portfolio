@@ -60,7 +60,7 @@ export class ProjectsSection extends Component {
                 
               </div>
                 <Col xs={6} sm={4} md={6}> <Panel className="text-center">AngularJS</Panel> </Col>
-                <Col xs={6} sm={4} md={6}> <Panel className="text-center">Google Maps</Panel> </Col>
+                <Col xs={6} sm={4} md={6}> <Panel className="text-center">Javascript</Panel> </Col>
                 <Col xs={6} sm={4} md={6}> <Panel className="text-center">SVG</Panel> </Col>
                 <Col xs={6} sm={4} smOffset={4} mdOffset={0} md={6}> <Panel className="text-center">Bootstrap</Panel> </Col>
             </div>
