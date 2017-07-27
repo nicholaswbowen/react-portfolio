@@ -15,7 +15,7 @@ export class ContactSection extends Component {
             </Col>
             <Col xs={10} xsOffset={1} sm={6} >
               <h1 className="text-center">Contact me</h1> 
-              <Col xs={8} xsOffset={2}>
+              <Col sm={8} smOffset={2}>
 
                 <h3><MailTo email="nicholas.w.bowen@gmail.com" obfuscate={true}><Glyphicon glyph="send"/> Email Me</MailTo></h3>
                 <h3><a href="https://github.com/nicholaswbowen" target="blank"><Glyphicon glyph="tasks"/> GitHub</a></h3>

@@ -49,10 +49,12 @@ a {
     color: $gray-lighter;
     .code-links{
         // box-shadow: 0 0 .5px .5px $shadow;
-        span{
-            margin-top: 50%;
+        .icon{
+            margin-top: 16px;
+            height: 65px;
             font-size: 200%;
         }
+        
         a{
             font-size: 200%;
             color: $gray-darker;
@@ -73,6 +75,7 @@ a {
         h1{
         font-size: 190%;
         }
+    
     }
     @media (min-width: $screen-lg) {
         h1{

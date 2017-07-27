@@ -11,7 +11,7 @@ export class BioSection extends Component {
         <br className="add-margin-bottom" />
         <div>
           
-          <Col xs={10} xsOffset={1} sm={10} smOffset={1} className="text-center add-margin-bottom">
+          <Col xs={12}  sm={10} smOffset={1} className="text-center add-margin-bottom">
             <h1>Seattle Front End Developer</h1>
             <h3 className="add-margin-bottom">Tried and True. Devoted to the art of crafting, polishing, and maintaining innovative products</h3>
             <span className="linkedin-header">
