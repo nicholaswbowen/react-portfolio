@@ -19,19 +19,20 @@ export class ProjectsSection extends Component {
 
         {/* HoodFacts */}
         <Col className="add-margin-bottom" >
-          <Col md={5} className="text-center">                    
+          <Col md={5} md={12} className="text-center">                    
             <Col md={12} >
               <div className="add-margin-bottom">
                 <h1>HoodFacts</h1>
                 <h3>Hoodfacts is an open source data visualization for viewing stats that matter to you. </h3>
               </div>
+              <br className="add-margin-bottom" />
                 <Col xs={6} sm={4} md={6}> <Panel className="text-center">AngularJS</Panel> </Col>
                 <Col xs={6} sm={4} md={6}> <Panel className="text-center">Typescript</Panel> </Col>
                 <Col xs={6} sm={4} md={6}> <Panel className="text-center">Node</Panel> </Col>
                 <Col xs={6} sm={4} md={6}> <Panel className="text-center">Google Maps</Panel> </Col>
                 <Col xs={6} sm={4} md={6}> <Panel className="text-center">Canvas</Panel> </Col>
                 <Col xs={6} sm={4} md={6}> <Panel className="text-center">MongoDB</Panel> </Col>
-                <Col xs={10} xsOffset={1} className="code-links text-center add-margin-bottom">
+                <Col xs={12} className="code-links text-center add-margin-bottom">
                   <Col xs={5}><Button bsStyle="success"><a href="https://boiling-fortress-51118.herokuapp.com" target="blank">Live</a></Button></Col>
                   <Col xs={2}><Glyphicon glyph="console"/></Col>
                   <Col xs={5}><Button bsStyle="warning"><a href="https://github.com/nicholaswbowen/Hoodfacts" target="blank">Code</a></Button></Col>
@@ -59,12 +60,13 @@ export class ProjectsSection extends Component {
                 <h3>Create interactive, tooltiped images to show off your product with little effort.</h3>
                 
               </div>
+                <br className="add-margin-bottom" />
                 <Col xs={6} sm={4} md={6}> <Panel className="text-center">AngularJS</Panel> </Col>
                 <Col xs={6} sm={4} md={6}> <Panel className="text-center">Javascript</Panel> </Col>
                 <Col xs={6} sm={4} md={6}> <Panel className="text-center">SVG</Panel> </Col>
                 <Col xs={6} sm={4} smOffset={4} mdOffset={0} md={6}> <Panel className="text-center">Bootstrap</Panel> </Col>
             </div>
-                <Col xs={10} xsOffset={1} className="code-links text-center add-margin-bottom">
+                <Col xs={12} className="code-links text-center add-margin-bottom">
                   <Col xs={5}><Button bsStyle="success"><a href="https://trakerr.io/" target="blank">Live</a></Button></Col>
                   <Col xs={2}><Glyphicon glyph="console"/></Col>
                   <Col xs={5}><Button bsStyle="warning"><a href="https://github.com/trakerr-com/angular-interactive-image" target="blank">Code</a></Button></Col>

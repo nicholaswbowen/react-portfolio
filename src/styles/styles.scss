@@ -57,9 +57,7 @@ a {
             font-size: 200%;
             color: $gray-darker;
         }
-        button{
-            min-width: 125px;
-        }
+
     }
     .panel-body{
         padding: 15px 0px 15px 0px;
@@ -79,6 +77,9 @@ a {
     @media (min-width: $screen-lg) {
         h1{
             font-size: 325%;
+        }
+        button{
+            min-width: 125px;
         }
         h3{
             font-size: 225%;
