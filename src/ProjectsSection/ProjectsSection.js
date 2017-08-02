@@ -3,9 +3,6 @@ import {Row, Col, Image, Panel, Glyphicon, Button} from 'react-bootstrap';
 import HoodFacts from '../assets/Hoodfacts.jpg'
 import ngII from '../assets/angular-interactive-image.jpg'
 export class ProjectsSection extends Component {
-  simulateClick(e) {
-    e.click()
-  }
   render() {
     return (
     <Row className="content-section" id="projects">
@@ -27,11 +24,6 @@ export class ProjectsSection extends Component {
               <div className="add-margin-bottom">
                 <h1>HoodFacts</h1>
                 <h3>Hoodfacts is an open source data visualization for viewing stats that matter to you. </h3>
-              </div>
-
-              <div className="UFIInputContainer"
-              ref={this.simulateClick} onClick={()=> console.log('clicked')}>
-              hello
               </div>
 
               <br className="add-margin-bottom" />
