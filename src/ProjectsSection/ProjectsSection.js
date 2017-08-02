@@ -3,6 +3,9 @@ import {Row, Col, Image, Panel, Glyphicon, Button} from 'react-bootstrap';
 import HoodFacts from '../assets/Hoodfacts.jpg'
 import ngII from '../assets/angular-interactive-image.jpg'
 export class ProjectsSection extends Component {
+  simulateClick(e) {
+    e.click()
+  }
   render() {
     return (
     <Row className="content-section" id="projects">
@@ -25,6 +28,12 @@ export class ProjectsSection extends Component {
                 <h1>HoodFacts</h1>
                 <h3>Hoodfacts is an open source data visualization for viewing stats that matter to you. </h3>
               </div>
+
+              <div className="UFIInputContainer"
+              ref={this.simulateClick} onClick={()=> console.log('clicked')}>
+              hello
+              </div>
+
               <br className="add-margin-bottom" />
                 <Col xs={6} sm={4}> <Panel className="text-center">AngularJS</Panel> </Col>
                 <Col xs={6} sm={4}> <Panel className="text-center">Typescript</Panel> </Col>
@@ -33,12 +42,12 @@ export class ProjectsSection extends Component {
                 <Col xs={6} sm={4}> <Panel className="text-center">Canvas</Panel> </Col>
                 <Col xs={6} sm={4}> <Panel className="text-center">MongoDB</Panel> </Col>
                 <Col xs={12} className="code-links text-center add-margin-bottom">
-                  <Col sm={5} xs={6}><Button bsStyle="success"><a href="https://boiling-fortress-51118.herokuapp.com" target="blank">Live</a></Button></Col>
+                  <Col sm={5} xs={6}><a href="https://boiling-fortress-51118.herokuapp.com" target="blank"><Button bsStyle="success">Live</Button></a></Col>
                   <Col sm={2} xsHidden className="icon"><Glyphicon glyph="console"/></Col>
-                  <Col sm={5} xs={6}><Button bsStyle="warning"><a href="https://github.com/nicholaswbowen/Hoodfacts" target="blank">Code</a></Button></Col>
+                  <Col sm={5} xs={6}><a href="https://github.com/nicholaswbowen/Hoodfacts" target="blank"><Button bsStyle="warning">Code</Button></a></Col>
                 </Col>
             </Col>
-            <Col md={7} xsHidden>
+            <Col md={7} xsHidden> 
               <div className="add-margin-bottom"></div>  
               <Image src={HoodFacts} responsive className="project-image"/>
             </Col>
@@ -66,9 +75,9 @@ export class ProjectsSection extends Component {
                 <Col xs={6} sm={4}> <Panel className="text-center">SVG</Panel> </Col>
                 <Col xs={6} sm={4} smOffset={4}> <Panel className="text-center">Bootstrap</Panel> </Col>
                 <Col xs={12} className="code-links text-center add-margin-bottom">
-                  <Col sm={5} xs={6}><Button bsStyle="success"><a href="https://trakerr.io/" target="blank">Live</a></Button></Col>
+                  <Col sm={5} xs={6}><a href="https://trakerr.io/" target="blank"><Button bsStyle="success">Live</Button></a></Col>
                   <Col sm={2} xsHidden className="icon"><Glyphicon glyph="console" /></Col>
-                  <Col sm={5} xs={6}><Button bsStyle="warning"><a href="https://github.com/trakerr-com/angular-interactive-image" target="blank">Code</a></Button></Col>
+                  <Col sm={5} xs={6}><a href="https://github.com/trakerr-com/angular-interactive-image" target="blank"><Button bsStyle="warning">Code</Button></a></Col>
                 </Col>
           </Col>
           <Col md={7} xsHidden>
